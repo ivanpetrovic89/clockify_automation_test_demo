@@ -3,8 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class MainPage extends LoginPage{
-    public MainPage(WebDriver driver) {
+public class TimeTrackerPage extends LoginPage{
+    public TimeTrackerPage(WebDriver driver) {
         super(driver);
     }
 
@@ -19,6 +19,10 @@ public class MainPage extends LoginPage{
     public By deleteTrackingBy = By.xpath("//a[normalize-space()='Delete']");
     public By deleteButtonBy = By.xpath("//button[normalize-space()='Delete']");
     public By activeTimerBy = By.xpath("//span[@class='cl-form-control cl-input-time-picker-sum']");
+    public By projectButtonBy = By.xpath("//span[@class='cl-ml-2 w-fit cl-cut-text']");
+    public By createNewProjectButtonBy = By.xpath("//span[@class='cl-ml-2 cl-text-primary w-fit v-align-middle cl-d-inline-block cl-cut-text']");
+    public By projectNameBarBy = By.xpath("//input[@placeholder='Enter project name']");
+    public By createButtonBy = By.xpath("//button[normalize-space()='Create']");
 
     public void clickProfileIcon(){
         clickElement(profileIconBy);
@@ -55,6 +59,26 @@ public class MainPage extends LoginPage{
 
     public String getCurrentTime(){
         return readText(activeTimerBy);
+    }
+
+    public void clickOnProjectButton(){
+        clickElement(projectButtonBy);
+    }
+
+    public void clickOnCreateNewProjectButton(){
+        clickElement(createNewProjectButtonBy);
+    }
+
+    public void clickOnProjectNameBar(){
+        clickElement(projectNameBarBy);
+    }
+
+    public void writeProjectName(){
+        writeText(projectNameBarBy, "Test project");
+    }
+
+    public void clickCreate(){
+        clickElement(createButtonBy);
     }
 
 }

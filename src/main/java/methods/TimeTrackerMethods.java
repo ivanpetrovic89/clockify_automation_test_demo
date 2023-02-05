@@ -2,11 +2,11 @@ package methods;
 
 import org.openqa.selenium.WebDriver;
 import pages.LoginPage;
-import pages.MainPage;
+import pages.TimeTrackerPage;
 import utilities.PropertyManager;
 
-public class MainMethods extends MainPage {
-    public MainMethods(WebDriver driver) {
+public class TimeTrackerMethods extends TimeTrackerPage {
+    public TimeTrackerMethods(WebDriver driver) {
         super(driver);
     }
 
@@ -34,11 +34,19 @@ public class MainMethods extends MainPage {
         isElementDisplayed(startButtonBy);
     }
 
-    public void performCleanUp(){
+    public void performTimeTrackCleanUp(){
         clickTreeDotMenu();
         clickDeleteTracking();
         clickDeleteTrackingButton();
         waitTreeDotDisappear();
+    }
+
+    public void performCreateNewProject(){
+        clickOnProjectButton();
+        clickOnCreateNewProjectButton();
+        clickOnProjectNameBar();
+        writeProjectName();
+        clickCreate();
     }
 
 }

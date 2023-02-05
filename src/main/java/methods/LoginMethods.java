@@ -2,7 +2,7 @@ package methods;
 
 import org.openqa.selenium.WebDriver;
 import pages.LoginPage;
-import pages.MainPage;
+import pages.TimeTrackerPage;
 
 public class LoginMethods extends LoginPage {
     public LoginMethods(WebDriver driver) {
@@ -19,7 +19,7 @@ public class LoginMethods extends LoginPage {
     }
 
     public void loginCheck(){
-        isElementDisplayed(MainPage.startButtonBy);
+        isElementDisplayed(TimeTrackerPage.startButtonBy);
     }
 
 }

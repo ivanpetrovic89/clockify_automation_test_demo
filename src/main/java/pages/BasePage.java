@@ -22,6 +22,10 @@ public class BasePage {
         wait.until(ExpectedConditions.presenceOfElementLocated(elementBy));
     }
 
+    public void waitToBeClickable(By elementBy){
+        wait.until(ExpectedConditions.elementToBeClickable(elementBy));
+    }
+
     public static void waitToDisappear(By elementBy){
         wait.until(ExpectedConditions.invisibilityOfElementLocated(elementBy));
     }

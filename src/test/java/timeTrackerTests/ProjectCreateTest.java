@@ -8,9 +8,9 @@ import org.testng.annotations.Test;
 public class ProjectCreateTest extends BaseTimeTrackerTest{
     @Test(testName = "Create new project from Time Tracker test.")
     public void performStartStop() {
-        TimeTrackerMethods mainMethods = new TimeTrackerMethods(driver);
-        mainMethods.performCreateNewProject();
-        mainMethods.projectCreatedCheck();
+        TimeTrackerMethods timeTrackerMethods = new TimeTrackerMethods(driver);
+        timeTrackerMethods.performCreateNewProject();
+        timeTrackerMethods.projectCreatedCheck();
     }
 
     @AfterMethod

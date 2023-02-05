@@ -10,6 +10,7 @@ public class ProjectCreateTest extends BaseTimeTrackerTest{
     public void performStartStop() {
         TimeTrackerMethods mainMethods = new TimeTrackerMethods(driver);
         mainMethods.performCreateNewProject();
+        mainMethods.projectCreatedCheck();
     }
 
     @AfterMethod

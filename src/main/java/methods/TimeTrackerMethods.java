@@ -49,4 +49,8 @@ public class TimeTrackerMethods extends TimeTrackerPage {
         clickCreate();
     }
 
+    public void projectCreatedCheck(){
+        isElementDisplayed(nameOfProjectBy);
+    }
+
 }

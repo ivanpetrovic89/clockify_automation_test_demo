@@ -23,6 +23,7 @@ public class TimeTrackerPage extends LoginPage{
     public By createNewProjectButtonBy = By.xpath("//span[@class='cl-ml-2 cl-text-primary w-fit v-align-middle cl-d-inline-block cl-cut-text']");
     public By projectNameBarBy = By.xpath("//input[@placeholder='Enter project name']");
     public By createButtonBy = By.xpath("//button[normalize-space()='Create']");
+    public By nameOfProjectBy = By.xpath("//span[contains(text(),'Test project')]");
 
     public void clickProfileIcon(){
         clickElement(profileIconBy);

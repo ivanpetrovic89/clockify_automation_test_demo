@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Full regression - all tests in all browsers">
+
+    <test name="Chrome tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="loginTests.LoginTest"/>
+            <class name="loginTests.LogoutTest"/>
+            <class name="timeTrackerTests.TimeTrackerStartStopTest"/>
+            <class name="timeTrackerTests.ProjectCreateTest"/>
+        </classes>
+    </test>
+
+    <test name="Edge tests">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="loginTests.LoginTest"/>
+            <class name="loginTests.LogoutTest"/>
+            <class name="timeTrackerTests.TimeTrackerStartStopTest"/>
+            <class name="timeTrackerTests.ProjectCreateTest"/>
+        </classes>
+    </test>
+
+</suite>

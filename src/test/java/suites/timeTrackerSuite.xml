@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Time Tracker functionality tests">
+
+    <test name="Time tracker and create project tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="timeTrackerTests.TimeTrackerStartStopTest"/>
+            <class name="timeTrackerTests.ProjectCreateTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -13,6 +13,8 @@ positive logout test - src/test/java/loginTests/LogoutTest.java
 
 positive start/stop tracking time test - src/test/java/timeTrackerTests/TimeTrackerStartStopTest.java
 
+positive create new project test - src/test/java/timeTrackerTests/ProjectCreateTest.java
+
 You can see all mock test cases here:
 https://docs.google.com/spreadsheets/d/1CbKcagVxBw133ksSxDljzW9T6buYgmjBCGAbkYc-xig/edit?usp=sharing
 

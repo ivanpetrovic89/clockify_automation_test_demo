@@ -13,7 +13,7 @@ public class Browsers {
 
     public void startChrome(){
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver(new ChromeOptions().addArguments("--start-maximized"));
+        driver = new ChromeDriver(new ChromeOptions().addArguments("--start-maximized", "--remote-allow-origins=*"));
     }
 
     //TODO Fix the firefox browser failure
